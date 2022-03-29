@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Enter Pin"
+            android:textColor="#231F20"
+            android:textSize="25sp" />
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:inputType="numberPassword"
+            android:textColor="@color/colorAccent"
+            app:otp=""
+            app:text_background_color="@color/colorGray"></com.mukesh.OtpView>
+
+        <Button
+        android:id="@+id/verify"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/colorPrimary"
+        android:text="Verify"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/go_to_home"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/colorPrimary"
+        android:text="CANCLE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

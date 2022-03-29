@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorGrayLight"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:gravity="left"
+        android:text="Book No" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:gravity="left"
+        android:text="Amount"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:gravity="left"
+        android:text="Status"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".41"
+        android:gravity="center"
+        android:text="Action"
+        android:textColor="@android:color/holo_red_dark" />
+</LinearLayout>

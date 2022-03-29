@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ReportActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_rep_neft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_report_neft"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <!-- <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/ll_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_rep_neft"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Date"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="No of Recept"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Amount"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_tag"
+        android:layout_above="@+id/ll_total"></ListView>
+    <LinearLayout
+        android:id="@+id/ll_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:text="Grand Total"
+            android:textColor="@android:color/white"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".007"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"/>
+        <TextView
+            android:id="@+id/text_grand_total"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="Rs. 0.0"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_report_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Report Not Found \n Please Sync Stataement"/>
+</RelativeLayout>

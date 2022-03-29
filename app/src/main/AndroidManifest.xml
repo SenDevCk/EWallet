@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bih.nic.e_wallet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/bsphcl_logo"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/bsphcl_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activities.WebReportActivity"></activity>
+        <activity android:name=".activities.NeftDateWiseReportActivity" />
+        <activity android:name=".activities.GrivanceListActivity" />
+        <activity android:name=".activities.GrievanceEntryActivity" />
+        <activity android:name=".activities.ReportActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- C5:14:E5:56:CD:30:BB:B5:90:35:A9:85:49:62:E4:F9:2E:B0:B3:24 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BookNoActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ConsumerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UnbilledConsumerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PayDetailsActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PinCodeActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".activities.StatementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PrintReceptActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.AnalogicsPrinterSetupActivity" />
+        <activity
+            android:name=".activities.BixolonSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ConfigurePrinterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.StatmentSyncronizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TopupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ChangeMpinActivity" />
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.share"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".activities.GetNeftPayActivity" />
+
+        <receiver
+            android:name=".broadcastRecever.PendingTransactionRecever"
+            android:enabled="true"
+            android:exported="true"></receiver>
+            <receiver
+                android:name=".smsRecever.SmsReceiver"
+                android:enabled="true"
+                android:exported="true">
+                <intent-filter android:priority="9999">
+                    <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                </intent-filter>
+            </receiver>
+
+        <provider
+            android:name=".contentProvider.EwalletIMEIProvider"
+            android:authorities="com.nic.ewallet.contentProvider.EwalletIMEIProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>

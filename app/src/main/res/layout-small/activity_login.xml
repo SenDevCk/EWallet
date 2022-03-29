@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.bih.nic.e_wallet.activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bsphcl_logo" />
+        <TextView
+            android:id="@+id/text_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="10sp"
+            android:text="E-Wallet"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@color/colorGray"
+                android:hint="Userid"
+                android:inputType="textCapWords"
+                android:maxLength="10"
+                android:textSize="9dp"
+                android:padding="3dp"
+                android:textAllCaps="true"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray">
+
+                <EditText
+                    android:id="@+id/edit_pass"
+                    android:layout_width="135dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@+id/watch_pass"
+                    android:background="@color/colorGray"
+                    android:hint="Password"
+                    android:textSize="9dp"
+                    android:inputType="textPassword"
+                     />
+
+                <ToggleButton
+                    android:id="@+id/watch_pass"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/black_button"
+            android:text="Login"
+            android:textColor="#190033" />
+
+        <TextView
+            android:id="@+id/text_forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="20dp"
+            android:text="Forget Password"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/text_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Version"
+            android:textColor="@android:color/black"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/nic" />
+        <Button
+            android:id="@+id/button_signup"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/loginbtn"
+            android:text="Signup"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="9dp"
+        android:text="Services provided by: NIC Bihar"/>
+</RelativeLayout>

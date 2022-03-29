@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/colorGrayLight"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/text_book_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:text="9006336533" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:text="Amount"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Rs"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="50"
+            android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_message_string"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:gravity="left"
+        android:text="Success"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".41"
+        android:gravity="center"
+        android:text="Download/View MRU"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+</LinearLayout>

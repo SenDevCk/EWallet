@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Reports">
+        <menu>
+            <group
+                android:id="@+id/m1"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_topup"
+                    android:icon="@drawable/report"
+                    android:visible="true"
+                    android:title="Report" />
+                <item
+                    android:id="@+id/drawer_server_report"
+                    android:icon="@drawable/report"
+                    android:title="Server Report" />
+                <item
+                    android:id="@+id/drawer_web_report"
+                    android:icon="@drawable/report"
+                    android:visible="false"
+                    android:title="Web Report" />
+                <item
+                    android:id="@+id/drawer_tkc"
+                    android:icon="@drawable/report"
+                    android:title="NEFT Report" />
+                <item
+                    android:id="@+id/drawer_rep_datewise"
+                    android:icon="@drawable/report"
+                    android:visible="false"
+                    android:title="NEFT Report(Date wise)" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Complaint">
+        <menu>
+            <group
+                android:id="@+id/m2"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_gri_sin"
+                    android:icon="@drawable/entry"
+                    android:title="New Topup Complaint" />
+
+                <item
+                    android:id="@+id/drawer_gri_sts"
+                    android:icon="@drawable/report"
+                    android:title="Topup Complaint Status" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Unbilled Consumer">
+        <menu>
+            <group
+                android:id="@+id/m3"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_dow_un"
+                    android:icon="@drawable/download"
+                    android:title="Download Unbilled Consumer" />
+
+                <item
+                    android:id="@+id/drawer_list_un"
+                    android:icon="@drawable/report"
+                    android:title="Unbilled Consumer List" />
+
+            </group>
+        </menu>
+    </item>
+</menu>

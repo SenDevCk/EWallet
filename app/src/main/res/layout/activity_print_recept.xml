@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_call"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    tools:context="com.bih.nic.e_wallet.activities.PrintReceptActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_print_recept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_print_recept"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_print_recept"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="Print Details"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo_pr"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bsphcl_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_consumer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Name:Chandan Singh"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_consumer_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A/c-155400121332"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="To Send text Message please fill in your details"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="" />
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/text_individual"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:text="Individual"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/text_deler"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:text="Dealer"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="center"/>
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Connection ID"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/text_con_id_pr"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="sds2132"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="BILL NO"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/text_bill_no_pr"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="gjhg"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Pay Amount"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".1"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:src="@drawable/rupees_icon" />
+
+                <TextView
+                    android:id="@+id/text_pay_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:text="20"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Mobile"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/text_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:hint="9800211112"
+                    android:inputType="phone"
+                    android:paddingLeft="15dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Time"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/text_walet_bal"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:hint="1-05-2018 5:00 pm"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="15dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--        <CheckBox
+                    android:id="@+id/check_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I agree to be contacted by EzyHomes and others for similer properties or related services"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_print"
+        android:layout_below="@+id/app_bar_print_recept"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/success" />
+
+        <TextView
+            android:id="@+id/text_name_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Hello Chandan,"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Payment Successful !"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_recept_no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Recept number : sdasdf3132"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Amount : Rs. 0"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_pr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/nic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/foot_print_rec"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Print"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/foot_print_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Services provided by: NIC Bihar"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

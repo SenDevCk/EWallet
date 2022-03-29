@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text=" Details "
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/close_setup"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="19dp"
+                android:background="@drawable/circuler_gray"
+                android:padding="3dp"
+                android:src="@drawable/ic_action_close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="TICKET_NO" />
+
+                    <TextView
+                        android:id="@+id/text_tn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:padding="10dp"
+                    android:text="AMOUNT" />
+
+                <TextView
+                    android:id="@+id/text_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="PAY_MODE" />
+
+                    <TextView
+                        android:id="@+id/text_mode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="WALLET_ID" />
+
+                    <TextView
+                        android:id="@+id/text_wall_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="USER_ID" />
+
+                    <TextView
+                        android:id="@+id/text_uid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="UTR_NO" />
+
+                    <TextView
+                        android:id="@+id/text_utr_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="BANK" />
+
+                    <TextView
+                        android:id="@+id/text_bank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="TOPUP_DATE" />
+
+                    <TextView
+                        android:id="@+id/text_topup_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="DATE_TIME" />
+
+                    <TextView
+                        android:id="@+id/text_date_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="STATUS" />
+
+                    <TextView
+                        android:id="@+id/text_stas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="CURRENT_STATUS" />
+
+                    <TextView
+                        android:id="@+id/text_cu_sts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="REMARKS" />
+
+                    <TextView
+                        android:id="@+id/text_remarks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:text="USER_REMARKS" />
+
+                    <TextView
+                        android:id="@+id/text_ms_st"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

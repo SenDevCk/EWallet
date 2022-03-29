@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bih.nic.e_wallet.activities.ChangeMpinActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_mpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_mpin"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <!-- <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_mpin"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/old_m_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:hint="old m-pin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/new_m_pin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:hint="new m-pin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/new_m_pin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:hint="new m-pin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/button_change_mpin"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nic"/>
+    <Button
+        android:id="@+id/button_change_mpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:text="Change Pin"/>
+</RelativeLayout>

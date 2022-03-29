@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_no_boder"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text=" Set up "
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/close_setup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circuler_gray"
+        android:padding="3dp"
+        android:src="@drawable/ic_action_close"/>
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/button_mru"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="  MRU  "
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGray" />
+    <TextView
+        android:id="@+id/button_print"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Configure Printer  "
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGray" />
+
+</LinearLayout>

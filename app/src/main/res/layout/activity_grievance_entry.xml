@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_call"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    tools:context="com.bih.nic.e_wallet.activities.PayDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_single_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_single_rec"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_pay"
+        android:layout_below="@+id/app_bar_single_rec">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_lay_profile"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="About Consumer,"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_action_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_deleer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Name:Chandan Singh"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_acc_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="User ID :- RRF2161"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Nand Kumar Singh , itawan , Saran , Bihar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="To Send text Message please fill in your details"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/lypaymode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        tools:ignore="UselessParent">
+
+                        <Spinner
+                            android:id="@+id/spn_paymode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:overlapAnchor="false"
+                            android:paddingTop="8dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-7dp"
+                        android:background="#E4E6E4"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:text=" Pay Mode * "
+                        android:textColor="@color/colorPrimary" />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/lybank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        tools:ignore="UselessParent">
+
+                        <Spinner
+                            android:id="@+id/spn_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:overlapAnchor="false"
+                            android:paddingTop="8dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-7dp"
+                        android:background="#E4E6E4"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:text=" Bank * "
+                        android:textColor="@color/colorPrimary" />
+                </FrameLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etben_fmlyhis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="REF/UTR No."
+                        android:textAllCaps="true"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etben_amt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Amount"
+                        android:inputType="numberDecimal"
+                        android:maxLength="50"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/lydob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/btncaladob"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/calendaricon" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="38dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvdob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left"
+                        android:maxLength="12"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="#E4E6E4"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:text="DATE TIME"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etben_sms"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                android:textColorHint="@color/colorGrayDark"
+                android:hint="Enter Sms you got/Bank statement description"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical"
+                android:background="@drawable/rectangle_edit_text"
+                />
+            <CheckBox
+                android:id="@+id/check_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="I agree to be all above details are correct." />
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

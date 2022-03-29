@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorGrayLight"
+    android:orientation="vertical"
+    tools:context="com.bih.nic.e_wallet.activities.PinCodeActivity">
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="Services provided by: NIC Bihar"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dip"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_action_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Enter Pin"
+                android:textColor="#231F20"
+                android:textSize="25sp" />
+
+            <com.mukesh.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:inputType="numberPassword"
+                android:textColor="@color/colorAccent"
+                app:otp=""
+                app:text_background_color="@color/colorGray"></com.mukesh.OtpView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/passCode1"
+                    android:layout_width="40dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/passCode2"
+                    android:layout_width="40dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="4dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/passCode3"
+                    android:layout_width="40dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="4dip"
+                    android:layout_weight="0.13"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/passCode4"
+                    android:layout_width="40dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="4dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verify"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:background="@color/colorPrimary"
+                android:text="Verify"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/go_to_home"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:background="@color/colorPrimary"
+                android:text="GO TO HOME"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/check_con_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="........................"/>
+           <Button
+               android:id="@+id/but_sync_again"
+               android:layout_width="170dip"
+               android:layout_height="wrap_content"
+               android:background="@color/colorPrimary"
+               android:textColor="@android:color/white"
+               android:layout_gravity="center_horizontal"
+               android:text="Syncronise"
+               />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

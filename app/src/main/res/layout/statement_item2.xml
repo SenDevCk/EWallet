@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrayLight"
+    android:orientation="vertical"
+    android:id="@+id/ll_st_head"
+    >
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:visibility="visible"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@color/holo_green_light"
+        android:text="10/12/1988"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Chandan Singh"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_recept_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="9006336533"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Amount Paid :"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Rs. 50"
+        android:textColor="@android:color/holo_red_dark" />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/text_message_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:singleLine="true"
+        android:text="Con id : h545534dfbdfj"
+        android:textColor="@android:color/holo_green_dark" />
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/name_conid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/holo_green_light"
+        android:text="ck(Conid)"/>
+</LinearLayout>

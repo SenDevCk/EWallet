@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    tools:context="com.bih.nic.e_wallet.activities.StatementActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_staement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_sel_staement"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+           <!--  <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/rel_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/app_bar_staement"
+        android:background="@drawable/rectangle_edit_text">
+        <EditText
+            android:id="@+id/edit_rec"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/v"
+            android:hint="enter conID"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="numberSigned"
+            android:background="@android:color/transparent"
+            />
+        <View
+            android:id="@+id/v"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/toggle_re"
+            android:background="@color/colorGrayDark"/>
+        <ToggleButton
+            android:id="@+id/toggle_re"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:textOn="Conid"
+            android:textOff="Recept No"
+            android:background="@android:color/darker_gray"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/transaction_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/rel_search" />
+    <TextView
+        android:id="@+id/text_warning_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Statements Found !"
+        android:gravity="center"
+        android:padding="20dp"
+        android:drawableTop="@android:drawable/sym_def_app_icon"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/holo_red_light"/>
+</RelativeLayout>

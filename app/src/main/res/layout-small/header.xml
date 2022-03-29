@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/sblogo1" />
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="E-Wallet"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Avl. Balance"
+            android:textColor="@android:color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/rupee_white" />
+
+            <TextView
+                android:id="@+id/text_bav_bal"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Rs. 0"
+                android:textColor="@android:color/white"
+                android:textSize="7sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

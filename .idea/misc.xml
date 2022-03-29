@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/cks apps/EWallet/app/src/main/res/layout/activity_grievance_entry.xml" value="0.17916666666666667" />
+        <entry key="..\:/cks apps/EWallet/app/src/main/res/layout/activity_otp.xml" value="0.14814814814814814" />
+        <entry key="..\:/cks apps/EWallet/app/src/main/res/layout/main.xml" value="0.17916666666666667" />
+        <entry key="..\:/cks apps/EWallet/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

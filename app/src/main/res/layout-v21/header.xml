@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+   >
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/header_text"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/sblogo1"/>
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="E-Wallet"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Avl. Balance"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rupee_white"/>
+
+            <TextView
+                android:id="@+id/text_bav_bal"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Rs. 0"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+   >
+    <!--android:background="@drawable/appbg"-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".7dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_rotate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+               android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_action_refresh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:text="Refresh" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="0.003"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGrayDark"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/change_mpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_action_change" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:text="Change MPIN" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="0.003"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGrayDark"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rel_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_action_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:text="Profile" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="0.003"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGrayDark"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/zxing_barcode_scanner2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_action_logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:text="Logout" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:text="Services provided by: NIC Bihar"/>
+</RelativeLayout>

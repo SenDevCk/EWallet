@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Check payment details ."
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_consumer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Chandan Kr. Singh"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:singleLine="false"
+                    android:text="Vill+p.o-itawan ,Saran,Bihar"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/text_ac_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="A/c-5454565444455454"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_con_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="ConsumerID"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_old_con_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Old ConnectionID"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/text_book_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Book Number"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="2dp"
+                android:text="9801347665"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_meter_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="2dp"
+                android:text="Meter Number"
+                android:textColor="@color/holo_blue_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="2dp"
+                android:text="Total Amount"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/text_amount_paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Amount to be paid"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/check_con_pay"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/holo_red_dark"
+               android:padding="10dp"
+               android:gravity="left"
+               android:text="Amount you are paying is too large.So,you can't proceed ."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel_pay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".5"
+                android:background="@drawable/right_button"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/verify_pay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".5"
+                android:background="@drawable/left_button"
+                android:text="Verify"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

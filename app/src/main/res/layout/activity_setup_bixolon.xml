@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bih.nic.e_wallet.activities.BixolonSetupActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_bexton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_bexton"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <!-- <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listViewPairedDevices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_bexton"
+        android:layout_above="@+id/buttonConnect"
+        android:scrollbars="none"
+        ></ListView>
+
+    <Button
+        android:id="@+id/buttonConnect"
+        style="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/connect"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonPrintReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonConnect"
+        android:text="@string/print_receipt"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonBatteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonPrintReceipt"
+        android:text="Battery Status"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinnerData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBatteryStatus"
+
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonDirectIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinnerData"
+        android:text="Direct I/O"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonDisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonDirectIO"
+        android:text="@string/disconnect"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    tools:context="com.bih.nic.e_wallet.activities.MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_lay_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_sel_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <include layout="@layout/header" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/app_bar_lay_main"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <LinearLayout
+                    android:id="@+id/ll_topup"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circuler_gray"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/topup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:text="Top up"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <LinearLayout
+                    android:id="@+id/ll_payment"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circuler_gray"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/_payment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:text="Payment"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <LinearLayout
+                    android:id="@+id/ll_setup"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circuler_gray"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/setup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:text="Set up"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <FrameLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_syncall"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background="@drawable/circuler_gray"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/synchronize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="3dp"
+                            android:singleLine="true"
+                            android:text="Syncronize"
+                            android:textColor="@android:color/black"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_pen"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/circuler_red"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <LinearLayout
+                    android:id="@+id/ll_consumer_list"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circuler_gray"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/_consumer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:singleLine="true"
+                        android:text="Consumers"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <LinearLayout
+                    android:id="@+id/ll_statement"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circuler_gray"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/statement_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:text="Statement"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Would you like to verify the payment ?"/>
+        <TextView
+            android:id="@+id/text_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Amount : 20 rs"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/verify_pay"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:background="@drawable/left_button"
+                android:textColor="@android:color/white"
+                android:text="Verify"/>
+            <Button
+                android:id="@+id/cancel_pay"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:background="@drawable/right_button"
+                android:text="Cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

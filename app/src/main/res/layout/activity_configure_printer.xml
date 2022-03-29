@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_configP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_con_printer"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/txtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/app_bar_configP"
+        android:text="@string/title_printerlist"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/lstReceiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtList"
+        android:layout_above="@+id/btnRestart"
+        android:cacheColorHint="#ffffff"></ListView>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/btn_restart"
+        style="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
